@@ -1,0 +1,23 @@
+{
+  "name": "mpamboo-team-loyalty-system",
+  "version": "1.0.0",
+  "description": "This a viewer loyalty point system for the Mpamboo Network Team",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnuscodus/Mpamboo-Team-Loyalty-System.git"
+  },
+  "author": "PerseusLive_#9999",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magnuscodus/Mpamboo-Team-Loyalty-System/issues"
+  },
+  "homepage": "https://github.com/magnuscodus/Mpamboo-Team-Loyalty-System#readme",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "express": "^4.17.3"
+  }
+}

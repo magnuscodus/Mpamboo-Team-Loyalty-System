@@ -1,5 +1,5 @@
 * {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Tahoma', sans-serif;
 }
 
 :root {
@@ -27,6 +27,15 @@ a {
     font-weight: 600;
 }
 
-a :hover {
-    color: #00c4a7;
+#test {
+    border-radius: 10%;
+}
+
+#trovoIcon{
+    width: 20px;
+    height: 20px;
+}
+
+#mainTextColor {
+    color: #8594e4;
 }

@@ -8,7 +8,7 @@
         <title>Mpamboo Team Loyalty System</title>
         <link rel="icon" href="../icons/favicon.ico">
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
         <link rel="stylesheet" type="text/css" href="../css/index.css">
         <link rel="stylesheet" href="../css/index.css">
     </head>
@@ -17,30 +17,37 @@
         <section class="hero is-fullheight">
             <div class="hero-body has-text-centered">
                 <div class="login">
-                    <img src="../icons/favicon.ico" width="325px" />
-                    <br>
-                    <strong class="has-text-white">If you want to use the loyalty system, please login
-                        with your Trovo
-                        account!</strong><br><br>
-                    <button class="button is-block is-fullwidth is-medium is-primary is-rounded" type="submit">
-                        Login
+                    <h1 id="mainTextColor"
+                        class="is-size-5 is-italic is-underlined has-text-weight-semibold has-text-centered mb-1">
+                        Viewer Loyalty
+                        Reward System
+                    </h1><br>
+                    <img id="test" src="../icons/logo.ico" width="325rem" class="mb-2" /><br>
+                    <p id="mainTextColor"><b>
+                            If you want to use the loyalty system, please login
+                            with your Trovo / Twitch
+                            account!</b></p><br>
+                    <button class="button is-block is-fullwidth is-medium is-primary is-rounded mb-1" type="submit"
+                        onclick="">
+                        <img id="trovoIcon" src="../icons/trovo_svg.svg" alt="Trovo Icon" />
+                        Login with Trovo
                     </button>
-                    <br>
                     <nav class="level">
                         <div class="level-item has-text-centered">
                             <div>
-                                <a href="#" class="has-text-primary">Join our Discord</a>
-                            </div>
-                        </div>
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <a href="#" class="has-text-primary">Need support?</a>
+                                <a href="https://discord.gg/BbbJ9ETphp" target="_blank">Join
+                                    our Discord</a>
                             </div>
                         </div>
                     </nav>
                 </div>
             </div>
+            <!--Copyright Footer-->
+            <footer class="has-text-centered"> <small>&copy; Copyright 2022, MagnusCodus</small>
+            </footer>
         </section>
+
+        <script src="../js/index.js"></script>
     </body>
 
 </html>
