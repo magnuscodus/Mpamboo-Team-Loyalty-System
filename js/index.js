@@ -12,7 +12,7 @@ app.get('/', (req, res) => {
 
 app.get('/auth', (req, res) => {
     res.redirect(
-        `https://open.trovo.live/page/login.html?client_id=${process.env.TROVO_CLIENT_ID}&response_type=${process.env.RESPONSE_TYPE}&scope=${process.env.SCOPE}&redirect_uri=${process.env.REDIRECT_URI}&state=${process.env.STATE}`,
+        `https://open.trovo.live/page/login.html?client_id=${process.env.TROVO_CLIENT_ID}&response_type=${process.env.RESPONSE_TYPE}&scope=${process.env.SCOPE}&redirect_uri=${process.env.REDIRECT_URI}`,
     );
 });
 
@@ -22,7 +22,7 @@ app.get('/oauth-callback', ({
     }
 }, res) => {
     const body = {
-        client_id: process.env.GITHUB_CLIENT_ID,
+        client_id: process.env.TROVO_CLIENT_ID,
         response_type: process.env.RESPONSE_TYPE,
         scope: process.env.SCOPE,
         redirect_uri: process.env.REDIRECT_URI,
