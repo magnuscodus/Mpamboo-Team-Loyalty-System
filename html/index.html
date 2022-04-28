@@ -7,12 +7,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Mpamboo Team Loyalty System</title>
         <link rel="icon" href="../icons/logo.ico">
-        <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.3/css/bulma.min.css" />
-        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" href="../css/NunitoSansFont.css">
+        <link rel="stylesheet" href="../css/bulma.css">
         <link rel="stylesheet" href="../css/index.css">
-        
-        
     </head>
 
     <body>
@@ -27,12 +24,12 @@
                     <img id="test" src="../icons/logo.ico" width="325rem" class="mb-2" /><br>
                     <p id="mainTextColor"><b>
                             If you want to use the loyalty system, please login
-                            with your Trovo / Twitch
-                            account!</b></p><br>
-                    <button id="trovoLogin" class="button is-block is-fullwidth is-medium is-primary is-rounded mb-1" type="submit" onclick="GetAccessToken()">
-                        <img id="trovoIcon" src="../icons/trovo_svg.svg" alt="Trovo Icon" />
-                        Login with Trovo
-                    </button>
+                            with your Trovo Account!</b></p><br>
+                    <a
+                        href="https://open.trovo.live/page/login.html?client_id=ab1973484eebc9d24b65cdfae8b4a510&response_type=code&scope=user_details_self+chat_send_self+send_to_my_channel+manage_messages&redirect_uri=https://trovo.live&state=statedata"><button
+                            id="loginBtn" class="button is-block is-fullwidth is-medium is-primary is-rounded mb-1">
+                            <img id="trovoIcon" src="../icons/trovo_svg.svg" alt="Trovo Icon" />
+                            Login with Trovo</button></a>
                     <nav class="level">
                         <div class="level-item has-text-centered">
                             <div>
@@ -47,8 +44,7 @@
             <footer class="has-text-centered"> <small>&copy; Copyright 2022, MagnusCodus</small>
             </footer>
         </section>
-
-        <script src="../js/index.js"></script>
+        <!--<script type="module" src="../js/index.js"></script>-->
     </body>
 
 </html>
