@@ -6,30 +6,33 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../icons/logo.ico">
-        <link rel="stylesheet" href="../css/bulma.css">
+        <link rel="stylesheet" href="../node_modules/bulma/css/bulma.min.css">
         <link rel="stylesheet" href="../css/dashboard.css">
+        <script src="https://kit.fontawesome.com/2b426a85ed.js" crossorigin="anonymous"></script>
+        <script src="../js/jquery.js"></script>
     </head>
 
     <body>
-        <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" ">
+        <nav class="navbar is-fixed-top has-background-white-ter" role="navigation" aria-label="main navigation">
             <div class=" navbar-brand">
-            <img src="../icons/logo.ico" width="100">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
-                data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample"
+                    onclick="document.querySelector('.navbar-menu').classList.toggle('is-active');">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
             </div>
             <div class="navbar-menu">
                 <div class="navbar-start"></div>
-                <div class="navbar">
+                <div class="navbar has-background-white-ter">
                     <a class="navbar-item">
                         Home
                     </a>
                     <a class="navbar-item">
                         Profile
                     </a>
+                    <img src="../icons/logo.ico" width="100">
                     <a class="navbar-item">
                         Rewards
                     </a>
@@ -57,34 +60,7 @@
                 <div class="navbar-end"></div>
             </div>
         </nav>
-        <section class="section">
-            <div class="tile is-ancestor">
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Hello World</p>
-                        <p class="subtitle">What is up?</p>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Foo</p>
-                        <p class="subtitle">Bar</p>
-                    </article>
-                </div>
-                <div class="tile is-parent">
-                    <article class="tile is-child box">
-                        <p class="title">Welcome, User</p>
-                        <p class="subtitle">How are you today?</p>
-                        <div class="card">
-                            <div class="card-image">
-                                <figure class="image is-4by3">
-                                    <img src="../icons/logo.ico" alt="Placeholder image">
-                                </figure>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
+        <section class="section hero has-background-link-light">
             <div class="tile is-ancestor">
                 <div class="tile is-vertical is-8">
                     <div class="tile">
@@ -123,7 +99,7 @@
                 <div class="tile is-parent">
                     <article class="tile is-child box">
                         <div class="content">
-                            <p class="title">Tall column</p>
+                            <p class="title">Who are we?</p>
                             <p class="subtitle">With even more content</p>
                             <div class="content">
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat
