@@ -1,4 +1,4 @@
-function GetAccessToken() {
+async function GetAccessToken() {
 	const data = axios({
 		method: "GET",
 		client_id: process.env.TROVO_CLIENT_ID,
@@ -8,7 +8,7 @@ function GetAccessToken() {
 		scope: "user_details_self",
 	});
 
-	const response = await axios({
+	const response = axios({
 		url: data.url,
 		method: "POST",
 		headers: {"content-type": "application/json"},
@@ -18,5 +18,3 @@ function GetAccessToken() {
 	console.log(data);
 	return response.data;
 }
-
-document.getElementById("loginBtn").addEventListener("click", GetAccessToken);
