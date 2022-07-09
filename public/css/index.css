@@ -1,0 +1,41 @@
+* {
+    font-family: 'Tahoma', sans-serif;
+}
+
+:root {
+    --shadowDark: #55143d;
+    --background: #391c5a;
+    --shadowLight: #55143d;
+}
+
+body {
+    background: var(--background);
+}
+
+.hero-body {
+    justify-content: center;
+}
+
+.login {
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 8px 8px 15px var(--shadowDark), -8px -8px 15px var(--shadowLight);
+    background: #180c27;
+}
+
+a {
+    font-weight: 600;
+}
+
+#test {
+    border-radius: 10%;
+}
+
+#trovoIcon{
+    width: 20px;
+    height: 20px;
+}
+
+#mainTextColor {
+    color: #8594e4;
+}

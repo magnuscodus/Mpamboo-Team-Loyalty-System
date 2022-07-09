@@ -4,8 +4,8 @@
   "description": "This a viewer loyalty point system for the Mpamboo Network Team",
   "main": "app.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node app.js",
-    "dev": "cross-env NODE_ENV=development nodemon app.js"
+    "start": "nodemon server.js",
+    "start:prod": "NODE_ENV=production nodemon server.js"
   },
   "repository": {
     "type": "git",
@@ -18,23 +18,28 @@
   },
   "homepage": "https://github.com/magnuscodus/Mpamboo-Team-Loyalty-System#readme",
   "dependencies": {
-    "axios": "^0.26.1",
     "bulma": "^0.9.3",
-    "connect-mongo": "^4.6.0",
     "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "express-handlebars": "^6.0.6",
-    "express-session": "^1.17.3",
-    "method-override": "^3.0.0",
-    "moment": "^2.29.3",
-    "mongodb": "^4.5.0",
-    "mongoose": "^6.3.4",
+    "mongoose": "^5.13.14",
     "morgan": "^1.10.0",
+    "nodemon": "^1.3.3",
+    "package.json": "^0.0.0",
     "passport": "^0.6.0",
     "passport-trovo.js": "^0.0.1"
   },
   "devDependencies": {
-    "cross-env": "^7.0.3",
-    "nodemon": "^2.0.16"
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "^2.7.1"
+  },
+  "engines": {
+    "node": ">=10.0.0"
   }
 }

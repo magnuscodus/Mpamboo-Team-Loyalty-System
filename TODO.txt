@@ -1,7 +1,0 @@
-A module bundler has to be implemented after the project is done and will be rolled out to the clients.
-1. Browserify: https://browserify.org/
-2. Webpack: https://webpack.github.io/
-
-Vanilla JS in Browser there is no "require". Therefore Nodejs is completely different environment.
-
-nodemod app.js
